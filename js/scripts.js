@@ -1,6 +1,13 @@
-var a = prompt('Base:'),
-    h = prompt('Height;'),
-    triangleArea = a*h/2;
+var a = prompt('a:'),
+    b = prompt('b:'),
+    value = (a * a) - (2 * a * b) + (b * b);
 
-alert('Triangle field with base a: ' + a + ' and height h: ' + h + ' is equal to: ' + triangleArea);
-console.log('Triangle field with base a: ' + a + ' and height h: ' + h + ' is equal to: ' + triangleArea);
+console.log('(' + a +' - ' + b + ')^2 = ' + value);
+
+if ( value > 0 ) {
+    console.log('Wynik dodatni!');
+} else if ( value < 0 ) {
+    console.log('Wynik ujemny!'); // z tego równania nigdy nie wyjdzie ujemny wynik xD
+} else {
+    console.log('0!!!');
+}
