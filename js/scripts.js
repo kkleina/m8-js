@@ -1,5 +1,10 @@
-var buttons = document.getElementsByClassName('button');
+var list = document.getElementById('list'),
+    add = document.getElementById('addElem');
 
-for (i=0 ; i < buttons.length ; i++) {
-    alert(buttons[i].innerText);
-}
+add.addEventListener('click', function(e) {
+    var element = document.createElement('li'),
+        itemList = document.getElementsByTagName('li');
+    element.innerHTML = 'item '+itemList.length;
+    list.appendChild(element);
+    console.log(itemList);
+});
