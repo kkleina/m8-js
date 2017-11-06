@@ -1,19 +1,92 @@
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Moduł 9 - JS</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <h1>Moduł 9 - JS</h1>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>GAME Rock-Paper-Scissors</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="container-fluid text-center">
+            <h1>
+                Welcome to the game
+                <small>
+                    <span class="label label-default">Rock</span>
+                    <span class="label label-info">Paper</span>
+                    <span class="label label-danger">Scissors</span>
+                </small>
+            </h1>
+        </header>
+            
+        <main>
+            <div id="js-newGameElement" class="container text-center">
+                <button  id="js-newGameButton" class="btn btn-primary btn-lg">New game</button>
+            </div>
+            
+            <div id="js-playerPickElement" class="container text-center">
+                <button id="js-playerPick_rock" class="btn btn-default choise">
+                    <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+                    Rock
+                </button>
+                <button id="js-playerPick_paper"  class="btn btn-info choise">
+                    <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+                    Paper
+                </button>
+                <button id="js-playerPick_scissors"  class="btn btn-danger choise">
+                    <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
+                    Scissors
+                </button>
+            </div>
+            
+            <div id="js-resultsTableElement" class="container text-center">
+                <div class="row">
+                    <div id="js-gameWinner"></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-5">
+                        <span id="js-playerPoints" class="score">0</span>
+                        <span id="js-playerName">Player Name</span>
+                    </div>
+                    <div class="col-xs-4 col-sm-2 text-center">
+                        <span class="vs">VS.</span>
+                    </div>
+                    <div class="col-xs-4 col-sm-5 text-center">
+                        <span id="js-computerPoints" class="score">0</span>
+                        Computer
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-5">
+                        <span id="js-playerPick">...</span>
+                    </div>
+                    <div class="col-xs-4 col-sm-2 text-center">
+                        Choise
+                    </div>
+                    <div class="col-xs-4 col-sm-5 text-center">
+                        <span id="js-computerPick">...</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-5">
+                        <span id="js-playerResult">...</span>
+                    </div>
+                    <div class="col-xs-4 col-sm-2 text-center">
+                        Result
+                    </div>
+                    <div class="col-xs-4 col-sm-5 text-center">
+                        <span id="js-computerResult">...</span>
+                    </div>
+                </div>
+            </div>
+        </main>
     
-    <button id="addElem">Dodaj</button>
-    <ul id="list">
-        <li>item 0</li>
-        <li>item 1</li>
-        <li>item 2</li>
-    </ul>
+        <footer class="text-center">
+            <p>&copy; 2017 Krzysztof Kleina</p>
+        </footer>
+
     
-    <script type="text/javascript" src="js/scripts.js"></script>
-  </body>
+        <script type="text/javascript" src="js/scripts.js"></script>
+    </body>
 </html>

@@ -1,3 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Saira+Semi+Condensed:400,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+
 body {
     background: #ccc;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 30px;
+    small {
+        display: block;
+        padding: 15px 0;
+    }
+}
+
+.container {
+    padding: 20px;
+}
+
+.choise {
+    width: 80px;
+    height: 80px;
+    
+    i.fa {
+        display: block;
+        font-size: 3em;
+    }
+}
+
+.row {
+    border-bottom: 1px solid #aaa;
+    padding: 10px 0;
+    
+    &:first-of-type,
+    &:last-of-type {
+        border: none;
+    }
+}
+
+.alert {
+    margin: 0;
+}
+    
+.score,
+.vs {
+    display: block;
+    font-family: 'Audiowide', cursive;
+    font-size: 2em;
+}
+
+.vs {
+    padding: 10px;
+}
+
+header {
+    background: #bbb;
+    min-height: 200px;
+    padding: 15px 0;
+}
+
+main {
+    min-height: calc(100vh - 300px);
+}
+
+footer {
+    background: #bbb;
+    line-height: 100px;
+    
+    p {
+        margin: 0;
+    }
 }

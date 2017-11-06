@@ -32,6 +32,23 @@ module.exports = function(grunt) {
           spawn: false,
         },
       },
+    },
+      
+    browserSync: {
+      dev: {
+        bsFiles: {
+          src : [
+            'css/*.css',
+            '*.html'
+          ]
+        },
+        options: {
+          watchTask: true,
+          server: {
+            baseDir: "./"
+          }
+        }
+      }
     }
     
   });
@@ -39,7 +56,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-browser-sync');
   
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'jshint', 'watch']);
+  grunt.registerTask('default', ['sass', 'jshint', 'browserSync', 'watch']);
 };
